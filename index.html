@@ -65,8 +65,9 @@
 				<div class="header__form">
 					<div class="header__text">
 						<h1 class="header__title">
-							<span>Trans China Logistics</span> – <br />финансово–логистическая
-							компания по транспортировке грузов из Китая.
+							<span>Trans China Logistics</span> – <br />ПОЛНЫЙ ЦИКЛ РАБОТЫ С
+							КИТАЕМ. ВЫКУП ТОВАРА, БЕСПЛАТНЫЙ ПОИСК ПОСТАВЩИКА, ДОСТАВКА
+							ТОВАРОВ ИЗ КИТАЯ
 						</h1>
 					</div>
 					<form class="form">
@@ -90,7 +91,7 @@
 								class="form__input"
 								type="email"
 								name="email"
-								placeholder="E-mail*"
+								placeholder="E-mail"
 								required
 							/>
 						</div>
@@ -102,7 +103,33 @@
 								placeholder="Комментарии"
 							></textarea>
 						</div>
+						<div class="form__row">
+							<div class="form-floating form__select">
+								<select
+									class="form-select form__select-input"
+									id="floatingSelect"
+									aria-label="Floating label select example"
+								>
+									<option selected>Вариант доставки</option>
+									<option value="1">ЖД</option>
+									<option value="2">АВТО</option>
+									<option value="3">АВТО ЭКСПРЕСС</option>
+									<option value="3">АВИА</option>
+									<option value="3">АВИА ЭКСПРЕСС</option>
+									<option value="3">МОРЕ</option>
+								</select>
+								<label for="floatingSelect">Выберите вариант доставки</label>
+							</div>
+						</div>
 						<button class="form__button button">Получить расчет</button>
+						<div class="form__checkbox-block">
+							<input type="checkbox" id="checkbox" class="form__checkbox" />
+							<label for="checkbox" class="form__checkbox-label">
+								Я ознакомлен с Политикой конфиденциальности, согласен на
+								обработку персональных данных и подтверждаю, что мне исполнилось
+								18 лет
+							</label>
+						</div>
 						<p class="form__warning">
 							<span>*</span> Обязательно для заполнентя
 						</p>
