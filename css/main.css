@@ -142,6 +142,100 @@ textarea {
   background-color: black;
 }
 
+.advantages {
+  background-image: url("../images/fon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.advantages__inner {
+  padding: 50px 0;
+}
+.advantages__title {
+  color: #fff;
+  font-size: 56px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.advantages__title span {
+  color: #00abe1;
+}
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 100px;
+}
+.advantages__list-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 20px;
+}
+.advantages__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+.advantages__item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 150px;
+  height: 130px;
+}
+.advantages__item-image {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.advantages__item-image-calc {
+  width: 60%;
+}
+.advantages__item-image-people {
+  width: 55%;
+}
+.advantages__item-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.advantages__item-number {
+  opacity: 0.6;
+  font-size: 24px;
+  margin: 0;
+}
+.advantages__item-text {
+  margin: 0;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.mySwiper {
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 550px;
+}
+
+.swiper-button-prev {
+  left: 40%;
+}
+
+.swiper-button-next {
+  left: 60%;
+}
+
 .form {
   display: flex;
   flex-direction: column;
