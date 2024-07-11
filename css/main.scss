@@ -549,9 +549,7 @@ textarea {
 
 	&__list {
 		display: flex;
-		justify-content: flex-end;
 		gap: 50px;
-		overflow: hidden;
 	}
 
 	&__item {
@@ -563,6 +561,11 @@ textarea {
 		border-radius: 12px;
 		padding: 15px;
 		min-width: 350px;
+	}
+
+	&__slider {
+		width: 100%;
+		overflow: hidden;
 	}
 
 	&__avatar {

@@ -472,9 +472,7 @@ textarea {
 }
 .reviews__list {
   display: flex;
-  justify-content: flex-end;
   gap: 50px;
-  overflow: hidden;
 }
 .reviews__item {
   display: flex;
@@ -485,6 +483,10 @@ textarea {
   border-radius: 12px;
   padding: 15px;
   min-width: 350px;
+}
+.reviews__slider {
+  width: 100%;
+  overflow: hidden;
 }
 .reviews__avatar {
   width: 100px;
