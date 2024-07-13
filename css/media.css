@@ -123,6 +123,76 @@
 
 /* xs <= Small (sm) */
 @media (max-width: 576px) {
+	.header {
+		height: 100vh;
+	}
+
+	.header__logo {
+		display: none;
+	}
+
+	.header__item a {
+		font-size: 13px;
+	}
+
+	.header__menu {
+		justify-content: center;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #e7e9ea;
+	}
+
+	.header__form {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.header__text {
+		width: 100%;
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.3);
+		border-radius: 12px;
+		margin-top: 10px;
+	}
+
+	.form__checkbox-label {
+		font-size: 14px;
+		line-height: 16px;
+		width: 100%;
+	}
+
+	.form__textarea {
+		height: 50px;
+	}
+
+	.header__title {
+		font-size: 18px;
+	}
+
+	.header__title span {
+		font-size: 22px;
+	}
+
+	.header__button {
+		display: none;
+	}
+
+	.form {
+		width: 100%;
+	}
+	.form__row {
+		flex-direction: column;
+	}
+	.delivery__row {
+		flex-direction: column;
+	}
+
+	.advantages__title {
+		font-size: 48px;
+	}
+
+	.advantages__list-inner {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 /* === MOBILE FIRST === */
