@@ -133,6 +133,7 @@
 
 	.header__item a {
 		font-size: 13px;
+		font-weight: 700;
 	}
 
 	.header__menu {
@@ -149,7 +150,7 @@
 	.header__text {
 		width: 100%;
 		padding: 20px;
-		background-color: rgba(255, 255, 255, 0.3);
+		background-color: rgba(255, 255, 255, 0.4);
 		border-radius: 12px;
 		margin-top: 10px;
 	}
@@ -166,18 +167,40 @@
 
 	.header__title {
 		font-size: 18px;
+		color: #00214e;
 	}
 
 	.header__title span {
-		font-size: 22px;
+		font-size: 20px;
+		color: #00214e;
 	}
 
 	.header__button {
 		display: none;
 	}
 
+	.header__form {
+		justify-content: space-evenly;
+	}
+
 	.form {
 		width: 100%;
+		padding: 10px;
+		gap: 10px;
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+	.form__title {
+		color: #00214e;
+	}
+	.header__phone-link {
+		font-size: 26px;
+		color: #ed0027;
+	}
+	.header__text {
+		gap: 10px;
+	}
+	.header__phone-text {
+		color: #00214e;
 	}
 	.form__row {
 		flex-direction: column;
@@ -192,6 +215,79 @@
 
 	.advantages__list-inner {
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: none;
+	}
+
+	.work__line {
+		height: 60vh;
+		width: 2px;
+	}
+
+	.work__content {
+		position: relative;
+	}
+
+	.work__texts {
+		position: absolute;
+		top: 20px;
+		left: 120px;
+		gap: 40px;
+		flex-direction: column;
+	}
+
+	.work__points {
+		position: absolute;
+		flex-direction: column;
+		top: 30px;
+		left: -4px;
+		gap: 80px;
+	}
+
+	.work__truck {
+		position: absolute;
+		width: 50px;
+		top: 0px;
+	}
+
+	.reviews__list {
+		gap: 0;
+	}
+
+	.swiper-pagination {
+		display: none;
+	}
+
+	.footer__logo {
+		flex-direction: column;
+	}
+
+	.footer__list {
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.footer__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer__list-social {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.footer__item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer__link {
+		font-size: 16px;
 	}
 }
 

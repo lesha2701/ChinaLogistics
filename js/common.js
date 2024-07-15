@@ -54,32 +54,65 @@ gsap.registerPlugin(ScrollTrigger)
 
 const boxes = gsap.utils.toArray('.work__truck')
 
-boxes.forEach((box, i) => {
-	gsap.to(box, {
-		scrollTrigger: {
-			trigger: box,
-			scrub: true,
-		},
-		x: 1100,
+if (window.matchMedia('(min-width: 1000px)').matches) {
+	boxes.forEach((box, i) => {
+		gsap.to(box, {
+			scrollTrigger: {
+				trigger: box,
+				scrub: true,
+				start: 'top center+=200',
+			},
+			x: 1100,
+		})
 	})
-})
+} else if (window.matchMedia('(max-width: 560px)').matches) {
+	boxes.forEach((box, i) => {
+		gsap.to(box, {
+			scrollTrigger: {
+				trigger: box,
+				scrub: true,
+				start: 'top center+=200',
+			},
+			y: 450,
+		})
+	})
+}
 
-var swiper = new Swiper('.mySwiper-rev', {
-	slidesPerView: checkScreenSize(),
-})
+// var swiper = new Swiper('.mySwiper-rev', {
+// 	slidesPerView: checkScreenSize(),
+// })
 
-function checkScreenSize() {
-	if (window.matchMedia('(max-width: 576px)').matches) {
-		return 1.6
-	} else if (window.matchMedia('(max-width: 769px)').matches) {
-		return 3.5
-	} else if (window.matchMedia('(max-width: 1000px)').matches) {
-		return 4
-	} else if (window.matchMedia('(max-width: 1200px)').matches) {
-		return 5
-	} else {
-		return 3.5 // Значение по умолчанию
-	}
+// function checkScreenSize() {
+// 	if (window.matchMedia('(max-width: 576px)').matches) {
+// 		return 1.6
+// 	} else if (window.matchMedia('(max-width: 769px)').matches) {
+// 		return 3.5
+// 	} else if (window.matchMedia('(max-width: 1000px)').matches) {
+// 		return 4
+// 	} else if (window.matchMedia('(max-width: 1200px)').matches) {
+// 		return 5
+// 	} else {
+// 		return 3.5 // Значение по умолчанию
+// 	}
+// }
+
+if (window.matchMedia('(max-width: 500px)').matches) {
+	var swiper = new Swiper('.mySwiper-rev', {
+		slidesPerView: 1,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	})
+} else {
+	var swiper = new Swiper('.mySwiper-rev', {
+		slidesPerView: 2.8,
+		spaceBetween: 30,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	})
 }
 
 window.addEventListener('resize', function () {

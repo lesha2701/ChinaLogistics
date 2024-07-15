@@ -293,6 +293,12 @@ textarea {
 	left: 60%;
 }
 
+.swiper-pagination {
+	position: relative;
+	top: 70px;
+	margin-top: 20px;
+}
+
 .form {
 	display: flex;
 	flex-direction: column;
@@ -549,7 +555,6 @@ textarea {
 
 	&__list {
 		display: flex;
-		gap: 50px;
 	}
 
 	&__item {
@@ -616,5 +621,68 @@ textarea {
 		text-align: center;
 		color: #00214e;
 		opacity: 0.7;
+	}
+}
+
+.footer {
+	background-color: #00214e;
+	border-radius: 50px 50px 0 0;
+	padding: 40px 0;
+
+	&__logo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 50px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #fff;
+
+		&-img {
+			width: 80px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+
+		&-social {
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid #fff;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item {
+		&-logo {
+			border: 1px solid #fff;
+			padding: 10px;
+			border-radius: 12px;
+			font-size: 16px;
+		}
+	}
+
+	&__text {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
+	&__social {
+		display: flex;
+		gap: 15px;
+	}
+
+	&__block {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
+
+	&__img {
+		width: 30px;
 	}
 }

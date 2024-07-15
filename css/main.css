@@ -256,6 +256,12 @@ textarea {
   left: 60%;
 }
 
+.swiper-pagination {
+  position: relative;
+  top: 70px;
+  margin-top: 20px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -472,7 +478,6 @@ textarea {
 }
 .reviews__list {
   display: flex;
-  gap: 50px;
 }
 .reviews__item {
   display: flex;
@@ -528,4 +533,56 @@ textarea {
   text-align: center;
   color: #00214e;
   opacity: 0.7;
+}
+
+.footer {
+  background-color: #00214e;
+  border-radius: 50px 50px 0 0;
+  padding: 40px 0;
+}
+.footer__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+.footer__logo-img {
+  width: 80px;
+}
+.footer__list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer__list-social {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.footer__item-logo {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+.footer__text {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.footer__social {
+  display: flex;
+  gap: 15px;
+}
+.footer__block {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer__img {
+  width: 30px;
 }/*# sourceMappingURL=main.css.map */

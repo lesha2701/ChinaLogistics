@@ -33,7 +33,6 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
@@ -666,9 +665,7 @@
 				<div class="container reviews__inner">
 					<h2 class="reviews__title title">Отзывы</h2>
 					<div class="reviews__content">
-						<div
-							class="swiper-container swiper-container-rev mySwiper mySwiper-rev reviews__slider"
-						>
+						<div class="swiper mySwiper-rev reviews__slider">
 							<ul class="reviews__list swiper-wrapper">
 								<li class="reviews__item swiper-slide">
 									<img
@@ -945,6 +942,7 @@
 									</div>
 								</li>
 							</ul>
+							<div class="swiper-pagination"></div>
 						</div>
 					</div>
 				</div>
@@ -956,18 +954,18 @@
 					<div class="footer__logo">
 						<img class="footer__logo-img" src="./images/logo.png" alt="logo" />
 						<ul class="footer__list">
-							<li class="footer__item">
+							<li class="footer__item footer__item-logo">
 								<a class="footer__link" href="#">ЖД-перевозки</a>
 							</li>
-							<li class="footer__item">
+							<li class="footer__item footer__item-logo">
 								<a class="footer__link" href="#">Морские перевозки</a>
 							</li>
-							<li class="footer__item">
+							<li class="footer__item footer__item-logo">
 								<a class="footer__link" href="#"
 									>Денежные переводы в Китай из России</a
 								>
 							</li>
-							<li class="footer__item">
+							<li class="footer__item footer__item-logo">
 								<a class="footer__link" href="#">Автоперевозки</a>
 							</li>
 						</ul>
@@ -975,21 +973,29 @@
 					</div>
 				</div>
 				<div class="footer__row">
-					<ul class="footer__list">
+					<ul class="footer__list-social">
 						<li class="footer__item">
 							<p class="footer__text">Россия</p>
-							<a class="footer__link" href="tel:+7(495)123-45-67"
-								>8 (800) 500-8489
-							</a>
+							<div class="footer__block">
+								<img class="footer__img" src="./images/phone.svg" alt="" />
+								<a class="footer__link" href="tel:+7(495)123-45-67"
+									>8 (800) 500-8489
+								</a>
+							</div>
 						</li>
 						<li class="footer__item">
 							<p class="footer__text">Почта</p>
-							<a class="footer__link" href="mailto:transchinalogistics@mail.ru"
-								>transchinalogistics@mail.ru</a
-							>
+							<div class="footer__block">
+								<img class="footer__img" src="./images/email.svg" alt="" />
+								<a
+									class="footer__link"
+									href="mailto:transchinalogistics@mail.ru"
+									>transchinalogistics@mail.ru</a
+								>
+							</div>
 						</li>
 						<li class="footer__item">
-							<p>Наши соц. сети</p>
+							<p class="footer__text">Наши соц. сети</p>
 							<ul class="footer__social">
 								<li class="footer__social-item">
 									<a class="footer__social-link" href="#">
@@ -1013,13 +1019,27 @@
 								</li>
 							</ul>
 						</li>
+					</ul>
+				</div>
+				<div class="footer__row">
+					<ul class="footer__list">
 						<li class="footer__item">
-							<a class="footer__link" href="#">Контакты</a>
+							<a class="footer__link" href="#">услуги</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">о нас</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">отзывы</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">контакты</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
