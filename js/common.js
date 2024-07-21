@@ -119,3 +119,15 @@ window.addEventListener('resize', function () {
 	swiper.params.slidesPerView = checkScreenSize()
 	swiper.update()
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+	var headerMenu = document.querySelector('.header__menu')
+
+	window.addEventListener('scroll', function () {
+		if (window.scrollY > 0) {
+			headerMenu.classList.add('scrolled')
+		} else {
+			headerMenu.classList.remove('scrolled')
+		}
+	})
+})

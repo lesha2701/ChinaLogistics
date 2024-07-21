@@ -4,8 +4,8 @@
 		<meta charset="utf-8" />
 		<!-- <base href="/"> -->
 
-		<title>Simple Starter</title>
-		<meta name="description" content="Simple Starter Description" />
+		<title>TRANS CHINA LOGISTICS</title>
+		<meta name="description" content="TRANS CHINA LOGISTICS Description" />
 
 		<meta
 			name="viewport"
@@ -44,30 +44,36 @@
 		<header class="header">
 			<div class="container header__inner">
 				<div class="header__menu">
-					<div class="header__logo">
-						<a class="header__logo-link" href="index.html">
-							<img class="header__logo-img" src="images/logo.png" alt="Logo" />
-						</a>
+					<div class="header__block">
+						<div class="header__logo">
+							<a class="header__logo-link" href="index.html">
+								<img
+									class="header__logo-img"
+									src="images/logo.png"
+									alt="Logo"
+								/>
+							</a>
+						</div>
+						<nav class="header__nav">
+							<ul class="header__list">
+								<li class="header__item">
+									<a href="#delivery">Услуги</a>
+								</li>
+								<li class="header__item">
+									<a href="#about">О нас</a>
+								</li>
+								<li class="header__item">
+									<a href="#reviews">Отзывы</a>
+								</li>
+								<li class="header__item">
+									<a href="#contacts">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="header__button button" id="open-modal-btn1">
+							Оставить заявку
+						</button>
 					</div>
-					<nav class="header__nav">
-						<ul class="header__list">
-							<li class="header__item">
-								<a href="#">Услуги</a>
-							</li>
-							<li class="header__item">
-								<a href="#">О нас</a>
-							</li>
-							<li class="header__item">
-								<a href="#">Отзывы</a>
-							</li>
-							<li class="header__item">
-								<a href="#">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-					<button class="header__button button" id="open-modal-btn1">
-						Оставить заявку
-					</button>
 				</div>
 				<div class="header__form">
 					<div class="header__text">
@@ -236,7 +242,7 @@
 			</div>
 		</div>
 		<main class="main">
-			<section class="delivery">
+			<section class="delivery" id="delivery">
 				<div class="container">
 					<div class="delivery__inner">
 						<h2 class="delivery__title title">цены и способы доставки</h2>
@@ -248,7 +254,7 @@
 										<div class="delivery__item-content">
 											<div class="delivery__item-params">
 												<p class="delivery__item-params-title">Цена:</p>
-												<p class="delivery__item-params-value">от 2.8$ за кг</p>
+												<p class="delivery__item-params-value">от 2.4$ за кг</p>
 											</div>
 											<div class="delivery__item-params">
 												<p class="delivery__item-params-title">Сроки:</p>
@@ -258,7 +264,7 @@
 											</div>
 											<img
 												class="delivery__item-img"
-												src="./images/delivery/truck2.svg"
+												src="./images/delivery/gruzovik.png"
 												alt="truck_fast"
 											/>
 										</div>
@@ -268,17 +274,17 @@
 										<div class="delivery__item-content">
 											<div class="delivery__item-params">
 												<p class="delivery__item-params-title">Цена:</p>
-												<p class="delivery__item-params-value">от 2.8$ за кг</p>
+												<p class="delivery__item-params-value">от 1.5$ за кг</p>
 											</div>
 											<div class="delivery__item-params">
 												<p class="delivery__item-params-title">Сроки:</p>
 												<p class="delivery__item-params-value">
-													от 12 до 15 дней
+													от 16 до 18 дней
 												</p>
 											</div>
 											<img
-												class="delivery__item-img"
-												src="./images/delivery/truck.svg"
+												class="delivery__item-img delivery__item-img-gr"
+												src="./images/delivery/gruzovic2.png"
 												alt="truck_fast"
 											/>
 										</div>
@@ -297,8 +303,8 @@
 												</p>
 											</div>
 											<img
-												class="delivery__item-img"
-												src="./images/delivery/drone.svg"
+												class="delivery__item-img delivery__item-img-kwa"
+												src="./images/delivery/kwa.png"
 												alt="truck_fast"
 											/>
 										</div>
@@ -308,17 +314,17 @@
 										<div class="delivery__item-content">
 											<div class="delivery__item-params">
 												<p class="delivery__item-params-title">Цена:</p>
-												<p class="delivery__item-params-value">от 2.8$ за кг</p>
+												<p class="delivery__item-params-value">от 17$ за кг</p>
 											</div>
 											<div class="delivery__item-params">
 												<p class="delivery__item-params-title">Сроки:</p>
 												<p class="delivery__item-params-value">
-													от 12 до 15 дней
+													от 2 до 3 дней
 												</p>
 											</div>
 											<img
-												class="delivery__item-img delivery__item-plane"
-												src="./images/delivery/plane.svg"
+												class="delivery__item-img delivery__item-img-plane"
+												src="./images/delivery/plane.png"
 											/>
 										</div>
 									</li>
@@ -334,12 +340,12 @@
 											<div class="delivery__item-params">
 												<p class="delivery__item-params-title">Сроки:</p>
 												<p class="delivery__item-params-value">
-													от 12 до 15 дней
+													от 10 до 12 дней
 												</p>
 											</div>
 											<img
 												class="delivery__item-img delivery__item-plane"
-												src="./images/delivery/paper.svg"
+												src="./images/delivery/plane2.png"
 											/>
 										</div>
 									</li>
@@ -348,17 +354,17 @@
 										<div class="delivery__item-content">
 											<div class="delivery__item-params">
 												<p class="delivery__item-params-title">Цена:</p>
-												<p class="delivery__item-params-value">от 2.8$ за кг</p>
+												<p class="delivery__item-params-value">от 1.5$ за кг</p>
 											</div>
 											<div class="delivery__item-params">
 												<p class="delivery__item-params-title">Сроки:</p>
 												<p class="delivery__item-params-value">
-													от 12 до 15 дней
+													от 35 до 40 дней
 												</p>
 											</div>
 											<img
 												class="delivery__item-img delivery__item-plane delivery__item-trane"
-												src="./images/delivery/train.svg"
+												src="./images/delivery/train.png"
 											/>
 										</div>
 									</li>
@@ -377,7 +383,7 @@
 											</div>
 											<img
 												class="delivery__item-img delivery__item-container"
-												src="./images/delivery/container.svg"
+												src="./images/delivery/ship.png"
 											/>
 										</div>
 									</li>
@@ -392,7 +398,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="advantages" id="advantages">
+			<section class="advantages" id="about">
 				<div class="container">
 					<div class="advantages__inner">
 						<h2 class="advantages__title">ПОЧЕМУ ВЫБИРАЮТ НАС?</h2>
@@ -643,7 +649,11 @@
 							<p class="work__text">Подбор упаковки и отправка в Москву</p>
 							<p class="work__text">Отправка товара по России</p>
 						</div>
-						<img class="work__truck" src="./images/truck.svg" alt="truck" />
+						<img
+							class="work__truck"
+							src="./images/delivery/truck.png"
+							alt="truck"
+						/>
 						<div class="work__line"></div>
 						<div class="work__points">
 							<div class="work__point"></div>
@@ -661,7 +671,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews">
+			<section class="reviews" id="reviews">
 				<div class="container reviews__inner">
 					<h2 class="reviews__title title">Отзывы</h2>
 					<div class="reviews__content">
@@ -670,7 +680,7 @@
 								<li class="reviews__item swiper-slide">
 									<img
 										class="reviews__avatar"
-										src="./images/reviews/reviews1.png"
+										src="./images/reviews/14977611534349_1920x1200.jpg"
 										alt="review"
 									/>
 									<div class="reviews__row">
@@ -705,22 +715,23 @@
 									</div>
 									<div class="reviews__decor">
 										<p class="reviews__text">
-											(На рынке 4 месяца. Продаю товары для дома на маркетплейсе
-											Wildberries): Очень довольна сотрудничеством с MB Trans.
-											Предложили самые выгодные условия по доставке. Товар
-											пришёл вовремя. День в день. Приятные и компетентные
-											сотрудники по общению в чате
+											Очень приятно удивлена сотрудничеством с компанией TRANS
+											CHINA LOGISTICS. Моя компания предоставляет товары для
+											дома на площадке Wildberries, и благодаря услугам данной
+											логистической компании получила отличные условия по
+											доставке. Груз был доставлен точно в срок, что не могло не
+											радовать!
 										</p>
 									</div>
 								</li>
 								<li class="reviews__item swiper-slide">
 									<img
 										class="reviews__avatar"
-										src="./images/reviews/reviews1.png"
+										src="./images/reviews/71f47c7fb1518f86cdb4028e13e90cee.jpg"
 										alt="review"
 									/>
 									<div class="reviews__row">
-										<p class="reviews__name">Ольга</p>
+										<p class="reviews__name">Антон</p>
 										<div class="reviews__stars">
 											<img
 												class="reviews__star"
@@ -751,21 +762,20 @@
 									</div>
 									<div class="reviews__decor">
 										<p class="reviews__text">
-											(На рынке 4 месяца. Продаю товары для дома на маркетплейсе
-											Wildberries): Очень довольна сотрудничеством с MB Trans.
-											Предложили самые выгодные условия по доставке. Товар
-											пришёл вовремя.
+											TRANS CHINA LOGISTICS - компания, на которую можно
+											положиться. Рекомендую всем, кто ценит качество и
+											надежность в доставке грузов.
 										</p>
 									</div>
 								</li>
 								<li class="reviews__item swiper-slide">
 									<img
 										class="reviews__avatar"
-										src="./images/reviews/reviews1.png"
+										src="./images/reviews/person.jpg"
 										alt="review"
 									/>
 									<div class="reviews__row">
-										<p class="reviews__name">Ольга</p>
+										<p class="reviews__name">Екатерина</p>
 										<div class="reviews__stars">
 											<img
 												class="reviews__star"
@@ -796,22 +806,23 @@
 									</div>
 									<div class="reviews__decor">
 										<p class="reviews__text">
-											(На рынке 4 месяца. Продаю товары для дома на маркетплейсе
-											Wildberries): Очень довольна сотрудничеством с MB Trans.
-											Предложили самые выгодные условия по доставке. Товар
-											пришёл вовремя. День в день. Приятные и компетентные
-											сотрудники по общению в чате
+											Очень приятный опыт работы с компанией TRANS CHINA
+											LOGISTICS. Профессиональный подход к доставке груза, все
+											было выполнено вовремя. Была приятно удивлена
+											индивидуальным отношением и компетентностью сотрудников
+											компании. Рекомендую всем, кто ищет надежного партнера для
+											грузоперевозок.
 										</p>
 									</div>
 								</li>
 								<li class="reviews__item swiper-slide">
 									<img
 										class="reviews__avatar"
-										src="./images/reviews/reviews1.png"
+										src="./images/reviews/a9cba480134e07466e7d12e98682.jpg"
 										alt="review"
 									/>
 									<div class="reviews__row">
-										<p class="reviews__name">Ольга</p>
+										<p class="reviews__name">Сергей</p>
 										<div class="reviews__stars">
 											<img
 												class="reviews__star"
@@ -842,22 +853,23 @@
 									</div>
 									<div class="reviews__decor">
 										<p class="reviews__text">
-											(На рынке 4 месяца. Продаю товары для дома на маркетплейсе
-											Wildberries): Очень довольна сотрудничеством с MB Trans.
-											Предложили самые выгодные условия по доставке. Товар
-											пришёл вовремя. День в день. Приятные и компетентные
-											сотрудники по общению в чате
+											TRANS CHINA LOGISTICS - отличная компания для
+											грузоперевозок. Сотрудничал с ними недавно и был приятно
+											удивлен качеством обслуживания. Груз доставлен вовремя,
+											без задержек, что очень важно для моего бизнеса.
+											Профессиональные и отзывчивые сотрудники, всегда готовые
+											помочь и ответить на любые вопросы.
 										</p>
 									</div>
 								</li>
 								<li class="reviews__item swiper-slide">
 									<img
 										class="reviews__avatar"
-										src="./images/reviews/reviews1.png"
+										src="./images/reviews/white.jpg"
 										alt="review"
 									/>
 									<div class="reviews__row">
-										<p class="reviews__name">Ольга</p>
+										<p class="reviews__name">Анна</p>
 										<div class="reviews__stars">
 											<img
 												class="reviews__star"
@@ -888,21 +900,23 @@
 									</div>
 									<div class="reviews__decor">
 										<p class="reviews__text">
-											(На рынке 4 месяца. Продаю товары для дома на маркетплейсе
-											Wildberries): Очень довольна сотрудничеством с MB Trans.
-											Предложили самые выгодные условия по доставке. Товар
-											пришёл вовремя.
+											TRANS CHINA LOGISTICS - отличная компания, которая помогла
+											моему бизнесу с доставкой грузов. Я работаю с ними уже
+											несколько месяцев и хочу отметить их профессионализм и
+											эффективность. Грузоперевозки всегда проходят без
+											задержек, а качество обслуживания на высоте. Сотрудники
+											компании всегда готовы помочь и ответить на все вопросы.
 										</p>
 									</div>
 								</li>
 								<li class="reviews__item swiper-slide">
 									<img
 										class="reviews__avatar"
-										src="./images/reviews/reviews1.png"
+										src="./images/reviews/1697519556_klev-club-p-kartinki-prostie-lyudi-18.jpg"
 										alt="review"
 									/>
 									<div class="reviews__row">
-										<p class="reviews__name">Ольга</p>
+										<p class="reviews__name">Иван</p>
 										<div class="reviews__stars">
 											<img
 												class="reviews__star"
@@ -933,11 +947,12 @@
 									</div>
 									<div class="reviews__decor">
 										<p class="reviews__text">
-											(На рынке 4 месяца. Продаю товары для дома на маркетплейсе
-											Wildberries): Очень довольна сотрудничеством с MB Trans.
-											Предложили самые выгодные условия по доставке. Товар
-											пришёл вовремя. День в день. Приятные и компетентные
-											сотрудники по общению в чате
+											Trans China Logistics - профессиональная компания в сфере
+											грузоперевозок, с которой у меня был приятный опыт
+											сотрудничества. Заказывал перевозку крупногабаритного
+											груза, и компания предложила мне оптимальные условия
+											доставки. Груз был доставлен в оговоренные сроки точно по
+											расписанию.
 										</p>
 									</div>
 								</li>
@@ -948,7 +963,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="contacts">
 			<div class="container footer__inner">
 				<div class="footer__row">
 					<div class="footer__logo">
@@ -998,22 +1013,18 @@
 							<p class="footer__text">Наши соц. сети</p>
 							<ul class="footer__social">
 								<li class="footer__social-item">
-									<a class="footer__social-link" href="#">
-										<img
-											class="footer__social-img"
-											src="./images/facebook.svg"
-											alt="facebook"
-										/>
+									<a
+										class="footer__social-link"
+										href="https://wa.me/message/GBM26VYB5N2BG1"
+									>
 										<p>WhatsApp</p>
 									</a>
 								</li>
 								<li class="footer__social-item">
-									<a class="footer__social-link" href="#">
-										<img
-											class="footer__social-img"
-											src="./images/instagram.svg"
-											alt="instagram"
-										/>
+									<a
+										class="footer__social-link"
+										href="https://t.me/TCLogistics"
+									>
 										<p>Telegram</p>
 									</a>
 								</li>

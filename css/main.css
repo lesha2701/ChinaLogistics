@@ -81,20 +81,31 @@ textarea {
 }
 
 .header {
-  padding: 20px 0;
   height: 72vh;
   position: relative;
+  border-radius: 20px;
 }
 .header__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  padding: relative;
+  position: relative;
   z-index: 100;
 }
 .header__menu {
   width: 100%;
+  padding: 10px 0;
+  z-index: 1000000;
+  position: fixed;
+}
+.header__menu.scrolled {
+  background-color: #00214e;
+  transition: background-color 0.5s ease;
+}
+.header__block {
+  max-width: 1296px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -112,6 +123,7 @@ textarea {
   align-items: center;
   flex: 1;
   gap: 30px;
+  margin-top: 100px;
 }
 .header__text {
   width: 50%;
@@ -380,10 +392,18 @@ textarea {
   position: absolute;
   top: 70px;
   right: -30px;
-  width: 130px;
+  width: 49%;
 }
-.delivery__item-plane {
-  transform: scaleX(-1);
+.delivery__item-img-gr {
+  width: 55%;
+}
+.delivery__item-img-kwa {
+  top: 80px;
+  width: 58%;
+}
+.delivery__item-img-plane {
+  top: 50px;
+  width: 60%;
 }
 .delivery__item-trane {
   right: -10px;
@@ -457,10 +477,11 @@ textarea {
 }
 .work__truck {
   position: relative;
-  width: 100px;
-  top: 30px;
+  width: 150px;
+  top: 40px;
   left: 52px;
   z-index: 100;
+  transform: scaleX(-1);
 }
 .work__btn {
   margin-top: 80px;
@@ -494,7 +515,8 @@ textarea {
   overflow: hidden;
 }
 .reviews__avatar {
-  width: 100px;
+  height: 100px;
+  border-radius: 12px;
 }
 .reviews__row {
   display: flex;
@@ -576,6 +598,7 @@ textarea {
 }
 .footer__social {
   display: flex;
+  flex-direction: column;
   gap: 15px;
 }
 .footer__block {
