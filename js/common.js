@@ -78,7 +78,7 @@ if (window.matchMedia('(min-width: 1201px)').matches) {
 				scrub: true,
 				start: 'top center+=200',
 			},
-			y: 470,
+			y: 370,
 		})
 	})
 }
