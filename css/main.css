@@ -125,6 +125,12 @@ textarea {
   gap: 30px;
   margin-top: 100px;
 }
+.header__nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header__text {
   width: 50%;
   display: flex;
@@ -292,6 +298,9 @@ textarea {
   display: flex;
   gap: 20px;
   font: 1px;
+}
+.form__button-btn {
+  display: none;
 }
 .form__textarea {
   width: 100%;

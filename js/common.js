@@ -24,6 +24,11 @@ document
 		document.getElementById('my-modal').classList.add('open')
 	})
 
+document
+	.getElementById('open-modal-btn5')
+	.addEventListener('click', function () {
+		document.getElementById('my-modal').classList.add('open')
+	})
 // document
 // 	.getElementById('open-modal-btn4')
 // 	.addEventListener('click', function () {
@@ -54,7 +59,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const boxes = gsap.utils.toArray('.work__truck')
 
-if (window.matchMedia('(min-width: 1000px)').matches) {
+if (window.matchMedia('(min-width: 1201px)').matches) {
 	boxes.forEach((box, i) => {
 		gsap.to(box, {
 			scrollTrigger: {
@@ -65,7 +70,7 @@ if (window.matchMedia('(min-width: 1000px)').matches) {
 			x: 1100,
 		})
 	})
-} else if (window.matchMedia('(max-width: 560px)').matches) {
+} else if (window.matchMedia('(max-width: 1200px)').matches) {
 	boxes.forEach((box, i) => {
 		gsap.to(box, {
 			scrollTrigger: {
@@ -73,7 +78,7 @@ if (window.matchMedia('(min-width: 1000px)').matches) {
 				scrub: true,
 				start: 'top center+=200',
 			},
-			y: 450,
+			y: 470,
 		})
 	})
 }
