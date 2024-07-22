@@ -601,6 +601,10 @@ textarea {
   flex-direction: column;
   gap: 15px;
 }
+.footer__social-link {
+  display: flex;
+  gap: 10px;
+}
 .footer__block {
   display: flex;
   gap: 10px;

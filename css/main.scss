@@ -704,6 +704,11 @@ textarea {
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
+
+		&-link {
+			display: flex;
+			gap: 10px;
+		}
 	}
 
 	&__block {
