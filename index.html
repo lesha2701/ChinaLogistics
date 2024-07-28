@@ -193,40 +193,37 @@
 
 					<p class="modal__text">Мы свяжемся с вами в течении 30 минут!</p>
 
-					<form action="./mail.php" class="modal__form">
+					<form action="./telegram.php" class="modal__form" method="post">
 						<input
 							class="modal__form-input"
 							type="text"
+							name="name"
 							placeholder="Ваше имя"
 							required
 						/>
 						<input
 							class="modal__form-input"
 							type="email"
+							name="email"
 							placeholder="Ваш email"
 							required
 						/>
 						<input
 							class="modal__form-input"
 							type="phone"
+							name="tel"
 							placeholder="Ваш телефон"
 							required
 						/>
-						<select
-							name="delivery"
-							id=""
-							class="modal__form-input"
-							id=""
-							required
-						>
+						<select name="delivery_option" class="modal__form-input" required>
 							<option value="">Вариант доставки</option>
-							<option value="car_fast">Быстрое авто</option>
-							<option value="car">Авто</option>
-							<option value="train">Санкционные товары</option>
-							<option value="plane">Авиа</option>
-							<option value="plane">Медленное авиа</option>
-							<option value="plane">ЖД</option>
-							<option value="plane">Морем</option>
+							<option value="Авто экспресс">Авто экспресс</option>
+							<option value="Авто">Авто</option>
+							<option value="Санкционные товары">Санкционные товары</option>
+							<option value="Авиа  ">Авиа</option>
+							<option value="Авиа">Медленное авиа</option>
+							<option value="ЖД">ЖД</option>
+							<option value="Контейнер">Контейнер</option>
 						</select>
 						<button class="button modal__form-button" type="submit">
 							Заказать в 1 клик
