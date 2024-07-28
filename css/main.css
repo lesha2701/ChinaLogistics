@@ -83,7 +83,7 @@ textarea {
 .header {
   height: 72vh;
   position: relative;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 .header__inner {
   display: flex;
@@ -92,6 +92,7 @@ textarea {
   height: 100%;
   position: relative;
   z-index: 100;
+  border-radius: 50px;
 }
 .header__menu {
   width: 100%;
@@ -169,6 +170,7 @@ textarea {
   height: 100%;
   width: 100%;
   z-index: -1;
+  border-radius: 0 0 50px 50px;
 }
 .header__video::after {
   content: "";
@@ -185,6 +187,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 50px;
   position: relative;
 }
 .advantages__inner {
@@ -434,6 +437,7 @@ textarea {
   margin-top: 120px;
   background-color: #00214e;
   padding: 60px 0;
+  border-radius: 50px;
 }
 .work__title {
   text-align: center;

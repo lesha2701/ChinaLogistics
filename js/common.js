@@ -25,7 +25,37 @@ document
 	})
 
 document
+	.getElementById('open-modal-btn4')
+	.addEventListener('click', function () {
+		document.getElementById('my-modal').classList.add('open')
+	})
+
+document
 	.getElementById('open-modal-btn5')
+	.addEventListener('click', function () {
+		document.getElementById('my-modal').classList.add('open')
+	})
+
+document
+	.getElementById('open-modal-btn6')
+	.addEventListener('click', function () {
+		document.getElementById('my-modal').classList.add('open')
+	})
+
+document
+	.getElementById('open-modal-btn7')
+	.addEventListener('click', function () {
+		document.getElementById('my-modal').classList.add('open')
+	})
+
+document
+	.getElementById('open-modal-btn8')
+	.addEventListener('click', function () {
+		document.getElementById('my-modal').classList.add('open')
+	})
+
+document
+	.getElementById('open-modal-btn9')
 	.addEventListener('click', function () {
 		document.getElementById('my-modal').classList.add('open')
 	})
